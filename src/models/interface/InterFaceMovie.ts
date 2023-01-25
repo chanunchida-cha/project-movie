@@ -1,10 +1,10 @@
 export interface Movie {
   genre: string;
   title: string;
-  info: Info[];
+  info: MovieDetail[];
 }
 
-export interface Info {
+export interface MovieDetail {
   id: number;
   name: string;
   img: string;

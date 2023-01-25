@@ -7,9 +7,6 @@ import CardMovie from "@/layouts/CardMovie";
 
 export default function Index() {
   return (
-   <CardMovie 
-   image="/assets/images/Angel.webp"
-   movieName="Harry Potter and the Prisoner of Azkaban"
-   />
+   <Home/>
   );
 }
