@@ -31,16 +31,17 @@ class MovieStore {
 
   async getDetailMovie(category: string, movieName: string) {
     try {
+      let finalData = [];
       await this.getMovie();
-      for (const movie of this.movies) {
-        if (movie.genre === category) {
-          for (const detail of movie.info) {
-            if (detail.name === movieName) {
-              return this.moviesDetail === detail;
-            }
-          }
-        }
+      const details = this.movies.filter((movie) => movie.genre === category);
+      const rawData = details.map((raws) => raws.info.map((raw) => raw));
+      const data = rawData.map((datas) =>
+        datas.filter((datax) => datax.name === movieName)
+      );
+      for (const movie of data) {
+        finalData.push(...movie);
       }
+      this.moviesDetail = finalData[0];
     } catch (err) {
       console.log(err);
     }
