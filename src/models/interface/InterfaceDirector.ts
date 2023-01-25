@@ -2,6 +2,7 @@ export interface Director {
   name: string;
   img: string;
   des: Des;
+  knownFor: KnownFor[];
 }
 
 export interface Des {
@@ -10,8 +11,8 @@ export interface Des {
   born: string;
   parents: string;
   relatives: string;
-  starred: string;
-  knownFor: KnownFor[];
+  directed: string;
+  
 }
 
 export interface KnownFor {

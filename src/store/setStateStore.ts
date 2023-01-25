@@ -13,12 +13,10 @@ class SetStateStore {
 
   setCategoryActive(category: string) {
     this.categoryActive = category;
-    console.log(this.categoryActive);
   }
-  
+
   setManagementActive(activeMangeMovie: string) {
     this.manageMovieActive = activeMangeMovie;
-    console.log(this.manageMovieActive);
   }
 }
 

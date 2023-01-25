@@ -33,8 +33,8 @@ export const directors = [
     name: "Anthony Russo",
     img: "anthonyRusso.webp",
     des: {
-      alternativeNames: "",
-      height: "",
+      alternativeNames: "Anthony Russo",
+      height: "1.78 m",
       born: "February 3, 1970Cleveland, Ohio, USA",
       parents: "",
       relatives: "Joe Russo(Sibling)",
@@ -63,7 +63,7 @@ export const directors = [
     name: "Chris Columbus",
     img: "chrisColumbus.webp",
     des: {
-      alternativeNames: "",
+      alternativeNames: "Chris Columbus",
       height: "1.74 m",
       born: "September 10, 1958 Spangler, Pennsylvania, USA",
       parents: "Irene Columbus",
@@ -152,7 +152,7 @@ export const directors = [
     name: "David Yatesl",
     img: "davidYates.webp",
     des: {
-      alternativeNames: "",
+      alternativeNames: "David Yatesl",
       height: "1.85 m",
       born: "October 8, 1963 St. Helens, Merseyside, England, UK",
       parents: "",

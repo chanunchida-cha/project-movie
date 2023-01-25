@@ -34,7 +34,7 @@ export const actors = [
     name: "Chris Evans",
     img: "chrisEvans.webp",
     des: {
-      alternativeNames: "",
+      alternativeNames: "Chris Evans",
       height: "6′ (1.83 m)",
       born: "June 13, 1981 Boston, Massachusetts, USA",
       parents: "Lisa Evans",
@@ -94,7 +94,7 @@ export const actors = [
     name: "Chris Hemsworth",
     img: "chrisHemsworth.webp",
     des: {
-      alternativeNames: "Mark R.",
+      alternativeNames: "Chris Hemsworth",
       height: "1.73 m",
       born: "November 22, 1967 Kenosha, Wisconsin, USA",
       parents: "Marie Rose Ruffalo (Hebert)",
@@ -123,7 +123,7 @@ export const actors = [
     name: "Daniel Radcliffe",
     img: "danielRadcliffe.webp",
     des: {
-      alternativeNames: "Mark R.",
+      alternativeNames: "Daniel Radcliffe",
       height: "1.73 m",
       born: "November 22, 1967 Kenosha, Wisconsin, USA",
       parents: "Marie Rose Ruffalo (Hebert)",
@@ -153,7 +153,7 @@ export const actors = [
     name: "Rupert Grint",
     img: "rupertGrint.webp",
     des: {
-      alternativeNames: "Mark R.",
+      alternativeNames: "Rupert Grint",
       height: "1.73 m",
       born: "November 22, 1967 Kenosha, Wisconsin, USA",
       parents: "Marie Rose Ruffalo (Hebert)",
@@ -182,7 +182,7 @@ export const actors = [
     name: "Emma Watson",
     img: "emmaWatson.webp",
     des: {
-      alternativeNames: "Mark R.",
+      alternativeNames: "Emma Watson",
       height: "1.73 m",
       born: "November 22, 1967 Kenosha, Wisconsin, USA",
       parents: "Marie Rose Ruffalo (Hebert)",
@@ -211,7 +211,7 @@ export const actors = [
     name: "Tom Felton",
     img: "tomFelton.webp",
     des: {
-      alternativeNames: "Mark R.",
+      alternativeNames: "Tom Felton",
       height: "1.73 m",
       born: "November 22, 1967 Kenosha, Wisconsin, USA",
       parents: "Marie Rose Ruffalo (Hebert)",
