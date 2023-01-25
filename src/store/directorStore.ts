@@ -2,7 +2,7 @@ import axios from "axios";
 import { makeAutoObservable } from "mobx";
 
 class DirectorStore {
-  //declare variavle hear
+  //declare variable hear
 
   constructor() {
     makeAutoObservable(this);
