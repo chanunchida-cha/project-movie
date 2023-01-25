@@ -1,13 +1,25 @@
+import { movieStore } from "@/store/movieStore";
 import { useRouter } from "next/router";
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect } from "react";
 
 interface Props {}
 
 function MovieDetail({}: Props): ReactElement {
-  const rout = useRouter();
-  console.log(rout);
-  
-  return <div></div>;
+  const route = useRouter();
+  console.log(route);
+  const category = String(route.query.category);
+  const movieName = String(route.query.slug);
+
+  useEffect(() => {
+    const getMovieDetail = async () => {
+      await movieStore.getDetailMovie(category, movieName);
+    };
+    getMovieDetail();
+  }, []);
+
+  console.log("detail", movieStore.moviesDetail);
+
+  return <div>aa</div>;
 }
 
 export default MovieDetail;
