@@ -10,7 +10,7 @@ export const movies = [
         des: "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
         trailer: "https://www.youtube.com/embed/eOrNdBpGMv8",
         directName: "Joss Whedon",
-        Topcase: [
+        topcast: [
           "Robert Downey Jr.",
           "Chris Evans",
           "Mark Ruffalo",
@@ -24,7 +24,7 @@ export const movies = [
         des: "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
         trailer: "https://www.youtube.com/embed/tmeOjFno6Do",
         directName: "Joss Whedon",
-        Topcase: [
+        topcast: [
           "Robert Downey Jr.",
           "Chris Evans",
           "Mark Ruffalo",
@@ -38,7 +38,7 @@ export const movies = [
         des: "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
         trailer: "https://www.youtube.com/embed/g5_w5XrC7Ts",
         directName: "Anthony Russo",
-        Topcase: [
+        topcast: [
           "Robert Downey Jr.",
           "Chris Evans",
           "Mark Ruffalo",
@@ -52,7 +52,7 @@ export const movies = [
         des: "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
         trailer: "https://www.youtube.com/embed/8ugaeA-nMTc",
         directName: "Anthony Russo",
-        Topcase: [
+        topcast: [
           "Robert Downey Jr.",
           "Chris Evans",
           "Mark Ruffalo",
@@ -72,7 +72,7 @@ export const movies = [
         des: "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
         trailer: "https://www.youtube.com/embed/VyHV0BRtdxo",
         directName: "Chris Columbus",
-        Topcase: [
+        topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
           "Emma Watson",
@@ -86,7 +86,7 @@ export const movies = [
         des: "An ancient prophecy seems to be coming true when a mysterious presence begins stalking the corridors of a school of magic and leaving its victims paralyzed.",
         trailer: "https://www.youtube.com/embed/jBltxS8HfQ4",
         directName: "Chris Columbus",
-        Topcase: [
+        topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
           "Emma Watson",
@@ -100,7 +100,7 @@ export const movies = [
         des: "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
         trailer: "https://www.youtube.com/embed/mlADTRAWcD4",
         directName: "Alfonso Cuarón",
-        Topcase: [
+        topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
           "Emma Watson",
@@ -114,7 +114,7 @@ export const movies = [
         des: "Harry Potter finds himself competing in a hazardous tournament between rival schools of magic, but he is distracted by recurring nightmares.",
         trailer: "https://www.youtube.com/embed/XkfKuJckaW4",
         directName: "Mike Newell",
-        Topcase: [
+        topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
           "Emma Watson",
@@ -128,7 +128,7 @@ export const movies = [
         des: "With their warning about Lord Voldemort's return scoffed at, Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.",
         trailer: "https://www.youtube.com/embed/y6ZW7KXaXYk",
         directName: "David Yates",
-        Topcase: [
+        topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
           "Emma Watson",
@@ -142,7 +142,7 @@ export const movies = [
         des: "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince and begins to learn more about Lord Voldemort's dark past.",
         trailer: "https://www.youtube.com/embed/tAiy66Xrsz4",
         directName: "David Yates",
-        Topcase: [
+        topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
           "Emma Watson",
@@ -156,7 +156,7 @@ export const movies = [
         des: "As Harry, Ron and Hermione race against time and evil to destroy the Horcruxes, they uncover the existence of the three most powerful objects in the wizarding world: the Deathly Hallows.",
         trailer: "https://www.youtube.com/embed/MxqsmsA8y5k",
         directName: "David Yates",
-        Topcase: [
+        topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
           "Emma Watson",
@@ -170,7 +170,7 @@ export const movies = [
         des: "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
         trailer: "https://www.youtube.com/embed/5NYt1qirBWg",
         directName: "David Yates",
-        Topcase: [
+        topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
           "Emma Watson",

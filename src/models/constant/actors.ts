@@ -3,12 +3,12 @@ export const actors = [
     name: "Robert Downey Jr.",
     img: "robertDowneyJr.webp",
     des: {
-      AlternativeNames: "Bob Downey",
-      Height: "5′ 8″ (1.73 m)",
-      Born: "April 4, 1965 Manhattan, New York City, New York, USA",
-      Parents: "Robert Downey Sr.",
-      Relatives: "Allyson Downey",
-      Starred:
+      alternativeNames: "Bob Downey",
+      height: "5′ 8″ (1.73 m)",
+      born: "April 4, 1965 Manhattan, New York City, New York, USA",
+      parents: "Robert Downey Sr.",
+      relatives: "Allyson Downey",
+      starred:
         "Dolittle,Avengers: Endgame,Avengers: Infinity War,Spider-Man: Homecoming",
     },
 
@@ -34,12 +34,12 @@ export const actors = [
     name: "Chris Evans",
     img: "chrisEvans.webp",
     des: {
-      AlternativeNames: "",
-      Height: "6′ (1.83 m)",
-      Born: "June 13, 1981 Boston, Massachusetts, USA",
-      Parents: "Lisa Evans",
-      Relatives: "Mike Capuano",
-      Starred: "The Gray Man,Don't Look Up,Free Guy,Defending Jacob",
+      alternativeNames: "",
+      height: "6′ (1.83 m)",
+      born: "June 13, 1981 Boston, Massachusetts, USA",
+      parents: "Lisa Evans",
+      relatives: "Mike Capuano",
+      starred: "The Gray Man,Don't Look Up,Free Guy,Defending Jacob",
     },
 
     knownFor: [
@@ -64,12 +64,12 @@ export const actors = [
     name: "Mark Ruffalo",
     img: "markRuffalo.webp",
     des: {
-      AlternativeNames: "Mark R.",
-      Height: "1.73 m",
-      Born: "November 22, 1967 Kenosha, Wisconsin, USA",
-      Parents: "Marie Rose Ruffalo (Hebert)",
-      Relatives: "Scott Ruffalo(Sibling)",
-      Starred:
+      alternativeNames: "Mark R.",
+      height: "1.73 m",
+      born: "November 22, 1967 Kenosha, Wisconsin, USA",
+      parents: "Marie Rose Ruffalo (Hebert)",
+      relatives: "Scott Ruffalo(Sibling)",
+      starred:
         "She-Hulk: Attorney at Law,Little Demon,The Adam Project,Shang-Chi and the Legend of the Ten Rings",
     },
     knownFor: [
@@ -94,12 +94,12 @@ export const actors = [
     name: "Chris Hemsworth",
     img: "chrisHemsworth.webp",
     des: {
-      AlternativeNames: "Mark R.",
-      Height: "1.73 m",
-      Born: "November 22, 1967 Kenosha, Wisconsin, USA",
-      Parents: "Marie Rose Ruffalo (Hebert)",
-      Relatives: "Scott Ruffalo(Sibling)",
-      Starred: "Thor: Love and Thunder,Spiderhead,Interceptor,True Story",
+      alternativeNames: "Mark R.",
+      height: "1.73 m",
+      born: "November 22, 1967 Kenosha, Wisconsin, USA",
+      parents: "Marie Rose Ruffalo (Hebert)",
+      relatives: "Scott Ruffalo(Sibling)",
+      starred: "Thor: Love and Thunder,Spiderhead,Interceptor,True Story",
     },
     knownFor: [
       {
@@ -123,12 +123,12 @@ export const actors = [
     name: "Daniel Radcliffe",
     img: "danielRadcliffe.webp",
     des: {
-      AlternativeNames: "Mark R.",
-      Height: "1.73 m",
-      Born: "November 22, 1967 Kenosha, Wisconsin, USA",
-      Parents: "Marie Rose Ruffalo (Hebert)",
-      Relatives: "Scott Ruffalo(Sibling)",
-      Starred:
+      alternativeNames: "Mark R.",
+      height: "1.73 m",
+      born: "November 22, 1967 Kenosha, Wisconsin, USA",
+      parents: "Marie Rose Ruffalo (Hebert)",
+      relatives: "Scott Ruffalo(Sibling)",
+      starred:
         "The Lost City,Weird: The Al Yankovic Story,Escape from Pretoria,Guns Akimbo",
     },
     knownFor: [
@@ -153,12 +153,12 @@ export const actors = [
     name: "Rupert Grint",
     img: "rupertGrint.webp",
     des: {
-      AlternativeNames: "Mark R.",
-      Height: "1.73 m",
-      Born: "November 22, 1967 Kenosha, Wisconsin, USA",
-      Parents: "Marie Rose Ruffalo (Hebert)",
-      Relatives: "Scott Ruffalo(Sibling)",
-      Starred: "Servant,The ABC Murders,Snatch,Instruments of Darkness",
+      alternativeNames: "Mark R.",
+      height: "1.73 m",
+      born: "November 22, 1967 Kenosha, Wisconsin, USA",
+      parents: "Marie Rose Ruffalo (Hebert)",
+      relatives: "Scott Ruffalo(Sibling)",
+      starred: "Servant,The ABC Murders,Snatch,Instruments of Darkness",
     },
     knownFor: [
       {
@@ -182,12 +182,12 @@ export const actors = [
     name: "Emma Watson",
     img: "emmaWatson.webp",
     des: {
-      AlternativeNames: "Mark R.",
-      Height: "1.73 m",
-      Born: "November 22, 1967 Kenosha, Wisconsin, USA",
-      Parents: "Marie Rose Ruffalo (Hebert)",
-      Relatives: "Scott Ruffalo(Sibling)",
-      Starred: "Prada Paradoxe,Little Women,The Circle,Beauty and the Beast",
+      alternativeNames: "Mark R.",
+      height: "1.73 m",
+      born: "November 22, 1967 Kenosha, Wisconsin, USA",
+      parents: "Marie Rose Ruffalo (Hebert)",
+      relatives: "Scott Ruffalo(Sibling)",
+      starred: "Prada Paradoxe,Little Women,The Circle,Beauty and the Beast",
     },
     knownFor: [
       {
@@ -211,12 +211,12 @@ export const actors = [
     name: "Tom Felton",
     img: "tomFelton.webp",
     des: {
-      AlternativeNames: "Mark R.",
-      Height: "1.73 m",
-      Born: "November 22, 1967 Kenosha, Wisconsin, USA",
-      Parents: "Marie Rose Ruffalo (Hebert)",
-      Relatives: "Scott Ruffalo(Sibling)",
-      Starred:
+      alternativeNames: "Mark R.",
+      height: "1.73 m",
+      born: "November 22, 1967 Kenosha, Wisconsin, USA",
+      parents: "Marie Rose Ruffalo (Hebert)",
+      relatives: "Scott Ruffalo(Sibling)",
+      starred:
         "Burial,Canyon Del Muerto,The Forgotten Battle,A Babysitter's Guide to Monster Hunting",
     },
     knownFor: [

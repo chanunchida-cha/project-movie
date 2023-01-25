@@ -5,12 +5,12 @@ export interface Director {
 }
 
 export interface Des {
-  AlternativeNames: string;
-  Height: string;
-  Born: string;
-  Parents: string;
-  Relatives: string;
-  Starred: string;
+  alternativeNames: string;
+  height: string;
+  born: string;
+  parents: string;
+  relatives: string;
+  starred: string;
   knownFor: KnownFor[];
 }
 

@@ -3,12 +3,12 @@ export const directors = [
     name: "Joss Whedon",
     img: "jossWhedon.webp",
     des: {
-      AlternativeNames: "Joss 'The Boss' Whedon",
-      Height: "1.78 m",
-      Born: "June 23, 1964 New York City, New York, USA",
-      Parents: "Tom Whedon",
-      Relatives: "John Whedon(Grandparent)",
-      Directed:
+      alternativeNames: "Joss 'The Boss' Whedon",
+      height: "1.78 m",
+      born: "June 23, 1964 New York City, New York, USA",
+      parents: "Tom Whedon",
+      relatives: "John Whedon(Grandparent)",
+      directed:
         "Buffy the Vampire Slayer , The Avengers , Angel , The Cabin in the Woods",
     },
     knownFor: [
@@ -33,12 +33,12 @@ export const directors = [
     name: "Anthony Russo",
     img: "anthonyRusso.webp",
     des: {
-      AlternativeNames: "",
-      Height: "",
-      Born: "February 3, 1970Cleveland, Ohio, USA",
-      Parents: "",
-      Relatives: "Joe Russo(Sibling)",
-      Directed:
+      alternativeNames: "",
+      height: "",
+      born: "February 3, 1970Cleveland, Ohio, USA",
+      parents: "",
+      relatives: "Joe Russo(Sibling)",
+      directed:
         "Avengers: Endgame , Everything Everywhere All at Once , Captain America: The Winter Soldier , Avengers: Infinity War",
     },
     knownFor: [
@@ -63,12 +63,12 @@ export const directors = [
     name: "Chris Columbus",
     img: "chrisColumbus.webp",
     des: {
-      AlternativeNames: "",
-      Height: "1.74 m",
-      Born: "September 10, 1958 Spangler, Pennsylvania, USA",
-      Parents: "Irene Columbus",
-      Relatives: "",
-      Directed:
+      alternativeNames: "",
+      height: "1.74 m",
+      born: "September 10, 1958 Spangler, Pennsylvania, USA",
+      parents: "Irene Columbus",
+      relatives: "",
+      directed:
         "Harry Potter and the Sorcerer's Stone , Harry Potter and the Chamber of Secrets , Rent , The Help",
     },
     knownFor: [
@@ -93,12 +93,12 @@ export const directors = [
     name: "Alfonso Cuarón",
     img: "alfonsoCuarón.webp",
     des: {
-      AlternativeNames: "Alfonso Cuaron",
-      Height: "1.83 m",
-      Born: "November 28, 1961 Mexico City, Distrito Federal, Mexico",
-      Parents: "Alfredo Cuaron",
-      Relatives: "Carlos Cuarón(Sibling)",
-      Directed: "Gravity , Children of Men , Y tu mamá también , Roma",
+      alternativeNames: "Alfonso Cuaron",
+      height: "1.83 m",
+      born: "November 28, 1961 Mexico City, Distrito Federal, Mexico",
+      parents: "Alfredo Cuaron",
+      relatives: "Carlos Cuarón(Sibling)",
+      directed: "Gravity , Children of Men , Y tu mamá también , Roma",
     },
     knownFor: [
       {
@@ -122,12 +122,12 @@ export const directors = [
     name: "Mike Newell",
     img: "mikeNewell.webp",
     des: {
-      AlternativeNames: "Cormac Newell",
-      Height: "1.88 m",
-      Born: "March 28, 1942 St. Albans, Hertfordshire, England, UK",
-      Parents: "",
-      Relatives: "",
-      Directed:
+      alternativeNames: "Cormac Newell",
+      height: "1.88 m",
+      born: "March 28, 1942 St. Albans, Hertfordshire, England, UK",
+      parents: "",
+      relatives: "",
+      directed:
         "Four Weddings and a Funeral , Harry Potter and the Goblet of Fire , Into the West , Donnie Brasco",
     },
     knownFor: [
@@ -152,12 +152,12 @@ export const directors = [
     name: "David Yatesl",
     img: "davidYates.webp",
     des: {
-      AlternativeNames: "",
-      Height: "1.85 m",
-      Born: "October 8, 1963 St. Helens, Merseyside, England, UK",
-      Parents: "",
-      Relatives: "Andrew Yates(Sibling)",
-      Directed:
+      alternativeNames: "",
+      height: "1.85 m",
+      born: "October 8, 1963 St. Helens, Merseyside, England, UK",
+      parents: "",
+      relatives: "Andrew Yates(Sibling)",
+      directed:
         "Harry Potter and the Order of the Phoenix , Harry Potter and the Deathly Hallows: Part 1 , Harry Potter and the Deathly Hallows: Part 2 , The Legend of Tarzan",
     },
     knownFor: [

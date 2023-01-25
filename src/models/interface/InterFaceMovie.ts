@@ -11,5 +11,5 @@ export interface Info {
   des: string;
   trailer: string;
   directName: string;
-  Topcase: string[];
+  topcast: string[];
 }
