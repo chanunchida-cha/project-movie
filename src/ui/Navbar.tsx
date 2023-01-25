@@ -1,21 +1,10 @@
 import { Fragment, useEffect, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  BookmarkSquareIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  CursorArrowRaysIcon,
-  LifebuoyIcon,
-  PhoneIcon,
-  PlayIcon,
-  ShieldCheckIcon,
-  Squares2X2Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import SearchText from "./SearchText";
+import { setStateStore } from "@/store/setStateStore";
+import { observer } from "mobx-react-lite";
 
 const category = [
   {
@@ -28,10 +17,7 @@ const category = [
     name: "Fantasy",
   },
 ];
-const callsToAction = [
-  { name: "Watch Demo", href: "#", icon: PlayIcon },
-  { name: "Contact Sales", href: "#", icon: PhoneIcon },
-];
+
 const resources = [
   {
     name: "All Movie Information",
@@ -43,22 +29,17 @@ const resources = [
     name: "Add Movie Catrgory",
   },
 ];
-const recentPosts = [
-  { id: 1, name: "Boost your conversion rate", href: "#" },
-  {
-    id: 2,
-    name: "How to use search engine optimization to drive traffic to your site",
-    href: "#",
-  },
-  { id: 3, name: "Improve your customer experience", href: "#" },
-];
 
 function classNames(...classes: (false | null | undefined | string)[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Navbar() {
+const Navbar = observer(() => {
   const [navbar, setNavbar] = useState(true);
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeManageMovie, setActiveManageMovie] = useState(
+    "All Movie Information"
+  );
   const scrollNav = () => {
     if (window.scrollY > 60) {
       setNavbar(false);
@@ -72,6 +53,15 @@ export default function Navbar() {
       window.removeEventListener("scroll", scrollNav);
     };
   }, []);
+
+  useEffect(() => {
+    setStateStore.setCategoryActive(activeCategory);
+  }, [activeCategory]);
+
+  useEffect(() => {
+    setStateStore.setManagementActive(activeManageMovie);
+  }, [activeManageMovie]);
+
   return (
     <Popover
       className={`${
@@ -81,7 +71,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="/" className="text-3xl font-bold text-white">
+            <a href="/" className="text-3xl font-semibold text-white">
               Movie
             </a>
           </div>
@@ -125,8 +115,14 @@ export default function Navbar() {
                           {category.map((item) => (
                             <a
                               key={item.name}
-                              href="/"
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#4B4C4C] text-gray-400 hover:text-white"
+                              onClick={() => {
+                                setActiveCategory(item.name);
+                              }}
+                              className={
+                                item.name === activeCategory
+                                  ? "-m-3 flex items-start rounded-lg p-3 bg-[#4B4C4C] text-white"
+                                  : "-m-3 flex items-start rounded-lg p-3 hover:bg-[#4B4C4C] text-gray-400 hover:text-white"
+                              }
                             >
                               <div className="ml-4">
                                 <p className="text-base font-medium">
@@ -177,8 +173,14 @@ export default function Navbar() {
                           {resources.map((item) => (
                             <a
                               key={item.name}
-                              href="/"
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-[#4B4C4C] text-gray-400 hover:text-white"
+                              onClick={() => {
+                                setActiveManageMovie(item.name);
+                              }}
+                              className={
+                                item.name === activeManageMovie
+                                  ? "-m-3 flex items-start rounded-lg p-3 bg-[#4B4C4C] text-white"
+                                  : "-m-3 flex items-start rounded-lg p-3 hover:bg-[#4B4C4C] text-gray-400 hover:text-white"
+                              }
                             >
                               <div className="ml-4">
                                 <p className="text-base font-medium ">
@@ -196,7 +198,7 @@ export default function Navbar() {
             </Popover>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <SearchText/>
+            <SearchText />
           </div>
         </div>
       </div>
@@ -292,4 +294,6 @@ export default function Navbar() {
       </Transition>
     </Popover>
   );
-}
+});
+
+export default Navbar;

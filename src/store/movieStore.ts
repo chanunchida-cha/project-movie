@@ -14,8 +14,7 @@ class MovieStore {
       const response = await axios.get(`${process.env.NEXT_PUBLIC_GET_MOVIE}`);
 
       console.log(response);
-      console.log('yes');
-      
+      console.log("yes");
     } catch (err) {
       console.log(err);
     }
