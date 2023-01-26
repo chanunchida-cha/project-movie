@@ -1,3 +1,4 @@
+import CategoryList from "@/layouts/CategoryList";
 import { movieStore } from "@/store/movieStore";
 import Navbar from "@/ui/Navbar";
 import Image from "next/image";
@@ -11,8 +12,9 @@ const Home = () => {
     };
     getMovie();
   }, []);
-
-  return <div className=""></div>;
+  return <div>
+        <CategoryList/>
+  </div>;
 };
 
 export default Home;
