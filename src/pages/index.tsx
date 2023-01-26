@@ -17,26 +17,29 @@ const Index = observer(() => {
         };
         getMovie();
     }, []);
+  
     return (
-        <div className="w-2/3 mx-auto ">
+        <div className="w-2/3 mx-auto object-none">
             {movieStore.movies.map((movie: Movie ,index:number) => {
                 return (
                     <div className="category" key={index}>
-                        <div className="grid-movie grid grid-cols-4 gap-4 gap-y-20">
+                   
+                        <div className="grid-movie grid grid-cols-4 gap-4 gap-y-20" >
                             <p className="text-white font-normal text-[2rem] 
                             pt-48  pb-20">{movie.title}</p>
                         </div>
                         <div className="grid-movie grid grid-cols-4 gap-4 gap-y-20">
-                                      
                         {
                             movie.info.filter((item)=>item.name.includes(setStateStore.searchText)).map((info: MovieDetail,index:number) => {
                                 return (
-                                
+                                        <div>
+                                        
                                         <CardMovie key={index}
                                             image={info.img}
                                             movieName={info.name}
                                             category={movie.genre}
                                         />
+                                        </div>
                                     
                                 )
                             })
