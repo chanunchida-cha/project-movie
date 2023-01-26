@@ -1,15 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: "Rounded";
+  src: url(./font/Rounded.ttf) format('truetype');
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Prompt', sans-serif;
-  background-color: #100D0F;
+  font-family: 'Rounded', sans-serif;
+  background-color: #000000;
 }
 
 *{
-  font-family: 'Prompt', sans-serif;
+  /* font-family: 'Orbit', sans-serif; */
+  font-family: 'Rounded', sans-serif;
 }
