@@ -1,21 +1,22 @@
 export interface Actor {
   name: string;
   img: string;
-  des:Des
+  des: DesActor;
+  knownFor: KnownFor[];
 }
 
-export interface Des {
+export interface DesActor {
   alternativeNames: string;
   height: string;
   born: string;
   parents: string;
   relatives: string;
   starred: string;
-  knownFor: KnownFor[]
+  [key:string]:string
 }
 
 export interface KnownFor {
-    name:string
-    img:string
-    trailer:string
+  name: string;
+  img: string;
+  trailer: string;
 }

@@ -44,10 +44,37 @@ const Index = observer(() => {
                         </div>
                     </div>
 
-
-                )
-            })}
-        </div>
-    )
-})
+  const { searchText } = setStateStore;
+  return (
+    <div className="w-2/3 mx-auto ">
+      {movieStore.movies.map((movie: Movie) => {
+        return (
+          <div className="category">
+            <div className="grid-movie grid grid-cols-4 gap-4 gap-y-20">
+              <p
+                className="text-white font-normal text-[2rem] 
+                            pt-48  pb-20"
+              >
+                {movie.title}
+              </p>
+            </div>
+            <div className="grid-movie grid grid-cols-4 gap-4 gap-y-20">
+              {movie.info
+                .filter((item) => item.name.toLowerCase().includes(searchText))
+                .map((info: MovieDetail) => {
+                  return (
+                    <CardMovie
+                      image={info.img}
+                      movieName={info.name}
+                      category={movie.genre}
+                    />
+                  );
+                })}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+});
 export default Index;

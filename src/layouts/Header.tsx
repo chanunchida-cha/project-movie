@@ -7,7 +7,6 @@ type Props = {};
 
 const Header = (props: Props) => {
   const route = useRouter();
-  console.log(route);
   const hiddenBanner = route.pathname.startsWith("/movie");
 
   return (
