@@ -5,7 +5,7 @@ class SetStateStore {
   //declare variable hear
   categoryActive: string = "All";
   manageMovieActive: string = "All Movie Information";
-
+  searchText:string="";
   constructor() {
     makeAutoObservable(this);
   }
@@ -18,6 +18,10 @@ class SetStateStore {
   setManagementActive(activeMangeMovie: string) {
     this.manageMovieActive = activeMangeMovie;
   }
+   setSearchText=(searchText:string) =>{
+    this.searchText=searchText;
+   }
+
 }
 
 export const setStateStore = new SetStateStore();

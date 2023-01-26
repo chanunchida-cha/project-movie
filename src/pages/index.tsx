@@ -8,6 +8,7 @@ import { observer } from "mobx-react-lite";
 import { useEffect } from "react";
 import { movieStore } from "@/store/movieStore";
 import { Movie, MovieDetail } from "@/models/interface/InterFaceMovie";
+import { setStateStore } from "@/store/setStateStore";
 
 const Index = observer(() => {
     useEffect(() => {
@@ -18,9 +19,9 @@ const Index = observer(() => {
     }, []);
     return (
         <div className="w-2/3 mx-auto ">
-            {movieStore.movies.map((movie: Movie) => {
+            {movieStore.movies.map((movie: Movie ,index:number) => {
                 return (
-                    <div className="category">
+                    <div className="category" key={index}>
                         <div className="grid-movie grid grid-cols-4 gap-4 gap-y-20">
                             <p className="text-white font-normal text-[2rem] 
                             pt-48  pb-20">{movie.title}</p>
@@ -28,10 +29,10 @@ const Index = observer(() => {
                         <div className="grid-movie grid grid-cols-4 gap-4 gap-y-20">
                                       
                         {
-                            movie.info.map((info: MovieDetail) => {
+                            movie.info.filter((item)=>item.name.includes(setStateStore.searchText)).map((info: MovieDetail,index:number) => {
                                 return (
                                     
-                                        <CardMovie
+                                        <CardMovie key={index}
                                             image={info.img}
                                             movieName={info.name}
                                             category={movie.genre}
