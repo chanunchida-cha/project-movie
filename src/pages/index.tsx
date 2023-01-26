@@ -21,7 +21,7 @@ const Index = observer(() => {
             {movieStore.movies.map((movie: Movie) => {
                 return (
                     <div className="category">
-                        <p className="text-white font-normal text-2xl pt-48 pl-48 pb-20">{movie.title}</p>
+                        <p className="text-white font-normal text-[4rem] pt-48 pl-[7.5rem] pb-20">{movie.title}</p>
                         <div className="grid-movie grid grid-cols-4 gap-4 gap-y-20">
                                       
                         {

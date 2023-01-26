@@ -10,9 +10,10 @@ function CardMovie({ image, movieName }: Props) {
         
         <div className="cardMovie-container w-96 mx-auto">
             <div className="cardMovie-img">
-                 <img className="rounded-lg" src={`/assets/images/${image}`} />
+                 <img className="rounded-t-3xl" src={`/assets/images/${image}`} />
             </div>
-            <p className="text-center text-white font-normal text-xl pt-6">
+            <p className="text-left text-white font-normal text-[2rem] pt-6
+           ">
                    {movieName}
             </p>
         </div>
