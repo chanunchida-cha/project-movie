@@ -31,6 +31,7 @@ const Index = observer(() => {
                                         <CardMovie
                                             image={info.img}
                                             movieName={info.name}
+                                            category={movie.genre}
                                         />
                                     
                                 )

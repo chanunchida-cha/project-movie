@@ -5,8 +5,7 @@ import { observer } from "mobx-react-lite";
 import { directorStore } from "@/store/directorStore";
 import CardMovie from "@/layouts/CardMovie";
 import { actorStore } from "@/store/actorStore";
-import DetailMovieLayout from "@/layouts/DetailMovieLayout";
-import MovieDetailComponent from "@/components/MovieDetail/MovieDetailComponent";
+
 
 interface Props {}
 
@@ -40,7 +39,6 @@ const MovieDetail = observer(() => {
 
   return (
     <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 text-white">
-      <MovieDetailComponent />
       {/* <div>{movieStore.moviesDetail.name}</div> */}
       {/* <CardMovie
         image={movieStore.moviesDetail.img}
