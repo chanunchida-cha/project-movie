@@ -17,11 +17,14 @@ const Index = observer(() => {
         getMovie();
     }, []);
     return (
-        <div>
+        <div className="w-2/3 mx-auto ">
             {movieStore.movies.map((movie: Movie) => {
                 return (
                     <div className="category">
-                        <p className="text-white font-normal text-[4rem] pt-48 pl-[7.5rem] pb-20">{movie.title}</p>
+                        <div className="grid-movie grid grid-cols-4 gap-4 gap-y-20">
+                            <p className="text-white font-normal text-[2rem] 
+                            pt-48  pb-20">{movie.title}</p>
+                        </div>
                         <div className="grid-movie grid grid-cols-4 gap-4 gap-y-20">
                                       
                         {
