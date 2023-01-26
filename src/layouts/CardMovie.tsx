@@ -9,7 +9,7 @@ interface Props {
 
 function CardMovie({ image, movieName,category }: Props) {
     return (
-        
+
         <div className="cardMovie-container w-96 mx-auto">
             <div className="cardMovie-img w-[17rem] mx-auto">
                 <Link href={`/movie/${category}/${movieName}`}>
@@ -20,10 +20,8 @@ function CardMovie({ image, movieName,category }: Props) {
             </p>
                 </Link>
             </div>
-            
-            
+
         </div>
-        
 
     );
 }
