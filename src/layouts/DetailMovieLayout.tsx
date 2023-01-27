@@ -1,4 +1,5 @@
-import React, { ReactElement } from "react";
+import ModalImage from "@/components/MovieDetail/ModalImage";
+import React, { ReactElement, useState } from "react";
 import CardMovie from "./CardMovie";
 import CardMovieDetail from "./CardMovieDetail";
 
@@ -7,15 +8,28 @@ interface Props {
   movieName: string;
   movieDetail: string;
   video: string;
+  hidden?: boolean;
 }
 
-function DetailMovieLayout({ image, movieName, movieDetail, video }: Props) {
+function DetailMovieLayout({
+  image,
+  movieName,
+  movieDetail,
+  video,
+
+}: Props) {
+  const [modal, setModal] = useState<boolean>(false);
   return (
     <div className="border-b border-[#707070] pb-24">
       <div className="text-2xl">{movieName}</div>
       <div className="grid grid-cols-7 mt-10">
-        <div className="col-span-2">
-          <CardMovieDetail image={image} movieName={movieName} hidden={true} />
+        <div
+          className="col-span-2"
+          onClick={() => {
+            setModal(true);
+          }}
+        >
+          <CardMovieDetail image={image} movieName={movieName} />
         </div>
         <div className="col-span-5  rounded-3xl">
           <iframe
@@ -31,6 +45,7 @@ function DetailMovieLayout({ image, movieName, movieDetail, video }: Props) {
       <div className="mt-12 bg-[#26292E]  rounded-3xl p-10 px-28 text-xl indent-10 leading-loose">
         {movieDetail}
       </div>
+      {modal && <ModalImage hidden={true} image={image} movieName={movieName} video={video} setModal={setModal} />}
     </div>
   );
 }
