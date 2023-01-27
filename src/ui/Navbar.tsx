@@ -5,6 +5,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import SearchText from "./SearchText";
 import { setStateStore } from "@/store/setStateStore";
 import { observer } from "mobx-react-lite";
+import Link from "next/link";
 
 const category = [
   {
@@ -71,9 +72,9 @@ const Navbar = observer(() => {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="/" className="text-3xl font-semibold text-white">
+            <Link href="/" className="text-4xl logofont text-white">
               Movie
-            </a>
+            </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500  ">
@@ -236,7 +237,7 @@ const Navbar = observer(() => {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {category.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href="/"
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
@@ -244,7 +245,7 @@ const Navbar = observer(() => {
                       <span className="ml-3 text-base font-medium text-gray-900">
                         {item.name}
                       </span>
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
@@ -265,13 +266,13 @@ const Navbar = observer(() => {
                   Docs
                 </a>
                 {resources.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href="/"
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div>

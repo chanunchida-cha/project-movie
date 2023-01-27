@@ -5,6 +5,13 @@
   font-family: "Rounded";
   src: url(./font/Rounded.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: "JosefinSans-BoldItalic";
+  src: url(./font/JosefinSans-BoldItalic.ttf) format('truetype');
+}
+
+
 html,
 body {
   padding: 0;
@@ -18,6 +25,12 @@ body {
   /* font-family: 'Orbit', sans-serif; */
   font-family: 'Rounded', sans-serif;
 }
+
+.logofont{
+  /* font-family: ${inter.style.fontFamily}; */
+  font-family: 'JosefinSans-BoldItalic', sans-serif;
+}
+
  /*
 .swiper {
   width: 60%;
