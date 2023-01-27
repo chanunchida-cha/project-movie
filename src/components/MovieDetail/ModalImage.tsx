@@ -21,11 +21,11 @@ interface Props {
 
 function ModalImage({ hidden, image, movieName, video, setModal }: Props) {
   return (
-    <div className="fixed z-20 inset-0 overflow-y-hidden bg-white bg-opacity-25 transition-opacity  my-auto">
+    <div className="fixed z-20 inset-0 overflow-y-hidden bg-black bg-opacity-80  transition-opacity  my-auto">
       <div className="grid grid-cols-12 grid-rows-6 h-full ">
-        <div className="col-span-12 col-start-1 row-span-6 row-start-1   bg-black bg-opacity-80  ">
+        <div className="col-span-10 col-start-2 row-span-6 row-start-1     ">
           <div className="grid grid-cols-12 h-full p-2 grid-rows-6">
-            <div className="col-start-12 flex justify-center row-span-1">
+            <div className="col-start-12 flex justify-center row-span-1 mt-5">
               <span
                 className="row-start-3 font-bold flex justify-end   "
                 onClick={() => {
@@ -48,7 +48,7 @@ function ModalImage({ hidden, image, movieName, video, setModal }: Props) {
                 </svg>
               </span>
             </div>
-            <div className="row-span-5 col-span-12  h-full">
+            <div className="row-span-5 col-span-12  h-full pb-36">
               <Swiper
                 navigation={true}
                 modules={[Navigation]}
@@ -61,7 +61,7 @@ function ModalImage({ hidden, image, movieName, video, setModal }: Props) {
                   <SwiperSlide>
                     {" "}
                     <iframe
-                      width="70%"
+                      width="60%"
                       height="100%"
                       src={video}
                       title="YouTube video player"
