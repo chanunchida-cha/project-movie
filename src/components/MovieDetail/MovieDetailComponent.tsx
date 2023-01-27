@@ -64,7 +64,7 @@ const MovieDetailComponent = observer(({}: Props) => {
       </div>
       <div>
         {moviesDetail.topcast.map((topcast) => {
-          return actors.map((actor,index) => {
+          return actors.map((actor, index) => {
             if (actor.name === topcast) {
               return (
                 <div className="mt-10" key={index}>

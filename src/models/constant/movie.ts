@@ -127,7 +127,7 @@ export const movies = [
         img: "harryPotterAndTheOrderOfThePhoenix.webp",
         des: "With their warning about Lord Voldemort's return scoffed at, Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.",
         trailer: "https://www.youtube.com/embed/y6ZW7KXaXYk",
-        directName: "David Yates",
+        directName: "David Yatesl",
         topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
@@ -141,7 +141,7 @@ export const movies = [
         img: "harryPotterandTheHalfBloodPrince.webp",
         des: "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince and begins to learn more about Lord Voldemort's dark past.",
         trailer: "https://www.youtube.com/embed/tAiy66Xrsz4",
-        directName: "David Yates",
+        directName: "David Yatesl",
         topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
@@ -155,7 +155,7 @@ export const movies = [
         img: "harryPotterAndTheDeathlyHallowsPart1.webp",
         des: "As Harry, Ron and Hermione race against time and evil to destroy the Horcruxes, they uncover the existence of the three most powerful objects in the wizarding world: the Deathly Hallows.",
         trailer: "https://www.youtube.com/embed/MxqsmsA8y5k",
-        directName: "David Yates",
+        directName: "David Yatesl",
         topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
@@ -169,7 +169,7 @@ export const movies = [
         img: "harryPotterAndTheDeathlyHallowsPart2.webp",
         des: "Harry, Ron, and Hermione search for Voldemort's remaining Horcruxes in their effort to destroy the Dark Lord as the final battle rages on at Hogwarts.",
         trailer: "https://www.youtube.com/embed/5NYt1qirBWg",
-        directName: "David Yates",
+        directName: "David Yatesl",
         topcast: [
           "Daniel Radcliffe",
           "Rupert Grint",
