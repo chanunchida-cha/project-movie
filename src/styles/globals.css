@@ -3,12 +3,12 @@
 @tailwind utilities;
 @font-face {
   font-family: "Rounded";
-  src: url(./font/Rounded.ttf) format('truetype');
+  src: url(/assets/font/Rounded.ttf) format('truetype');
 }
 
 @font-face {
   font-family: "JosefinSans-BoldItalic";
-  src: url(./font/JosefinSans-BoldItalic.ttf) format('truetype');
+  src: url(/assets/font/JosefinSans-BoldItalic.ttf) format('truetype');
 }
 
 

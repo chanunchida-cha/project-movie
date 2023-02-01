@@ -23,7 +23,7 @@ function DetailStaffLayout({ title, name, image, history, knownFor }: Props) {
   console.log(imageUrl);
 
   return (
-    <div className="border-b border-[#707070] pb-24">
+    <div className="border-b border-borderColor pb-24">
       <div className="text-2xl">{title}</div>
       <div className="text-2xl mt-12">{name}</div>
       <div className="grid grid-cols-7 mt-10">
@@ -37,7 +37,7 @@ function DetailStaffLayout({ title, name, image, history, knownFor }: Props) {
         >
           <CardMovieDetail image={image} movieName={name} />
         </div>
-        <div className="col-span-5 p-5 rounded-3xl bg-[#26292E]">
+        <div className="col-span-5 p-5 rounded-3xl bg-content">
           <div className=" text-xl ">ประวัติโดยย่อ</div>
           {historytitle.map((title, index) => {
             return (

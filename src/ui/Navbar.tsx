@@ -22,12 +22,15 @@ const category = [
 const resources = [
   {
     name: "All Movie Information",
+    path: "all-movie-information",
   },
   {
     name: "Add Movie Information",
+    path: "add-movie",
   },
   {
     name: "Add Movie Catrgory",
+    path: "all-category",
   },
 ];
 
@@ -39,7 +42,7 @@ const Navbar = observer(() => {
   const [navbar, setNavbar] = useState(true);
   const [activeCategory, setActiveCategory] = useState("All");
   const [activeManageMovie, setActiveManageMovie] = useState(
-    "All Movie Information"
+    ""
   );
   const scrollNav = () => {
     if (window.scrollY > 60) {
@@ -69,7 +72,7 @@ const Navbar = observer(() => {
         navbar && " w-full z-50 bg-[#330b0d] ease-in duration-500"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-6 text-white">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="text-4xl logofont text-white">
@@ -172,7 +175,8 @@ const Navbar = observer(() => {
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-[#1B1C1C] px-5 py-6 sm:gap-8 sm:p-8">
                           {resources.map((item) => (
-                            <a
+                            <Link
+                              href={`/management-movie/${item.path}`}
                               key={item.name}
                               onClick={() => {
                                 setActiveManageMovie(item.name);
@@ -188,7 +192,7 @@ const Navbar = observer(() => {
                                   {item.name}
                                 </p>
                               </div>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>

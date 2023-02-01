@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
-import CardMovieDetail from "@/layouts/CardMovieDetail";
+import CardMovieDetail from "@/layouts/movieDetailLayout/CardMovieDetail";
 
 interface Props {
   hidden: boolean;
@@ -19,7 +19,7 @@ interface Props {
   setModal: (value: boolean) => void;
 }
 
-function ModalImage({ hidden, image, movieName, video, setModal }: Props) {
+function ModalImage({ hidden, image, video, setModal }: Props) {
   return (
     <div className="fixed z-20 inset-0 overflow-y-hidden bg-black bg-opacity-80  transition-opacity  my-auto">
       <div className="grid grid-cols-12 grid-rows-6 h-full ">

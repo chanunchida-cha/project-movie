@@ -4,7 +4,7 @@ import { makeAutoObservable } from "mobx";
 class SetStateStore {
   //declare variable hear
   categoryActive: string = "All";
-  manageMovieActive: string = "All Movie Information";
+  manageMovieActive: string = "";
   searchText:string="";
   constructor() {
     makeAutoObservable(this);

@@ -4,8 +4,8 @@ import React, { useEffect } from "react";
 import { observer } from "mobx-react-lite";
 import { directorStore } from "@/store/directorStore";
 import { actorStore } from "@/store/actorStore";
-import DetailMovieLayout from "@/layouts/DetailMovieLayout";
-import DetailStaffLayout from "@/layouts/DetailStaffLayout";
+import DetailMovieLayout from "@/layouts/movieDetailLayout/DetailMovieLayout";
+import DetailStaffLayout from "@/layouts/movieDetailLayout/DetailStaffLayout";
 
 type Props = {};
 

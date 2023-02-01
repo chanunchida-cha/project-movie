@@ -1,6 +1,6 @@
 import ModalImage from "@/components/MovieDetail/ModalImage";
 import React, { ReactElement, useState } from "react";
-import CardMovie from "./CardMovie";
+import CardMovie from "../CardMovie";
 import CardMovieDetail from "./CardMovieDetail";
 
 interface Props {
@@ -20,7 +20,7 @@ function DetailMovieLayout({
 }: Props) {
   const [modal, setModal] = useState<boolean>(false);
   return (
-    <div className="border-b border-[#707070] pb-24">
+    <div className="border-b border-borderColor pb-24">
       <div className="text-2xl">{movieName}</div>
       <div className="grid grid-cols-7 mt-10">
         <div
@@ -42,7 +42,7 @@ function DetailMovieLayout({
         </div>
       </div>
       <div className="mt-12  text-2xl">เนื้อเรื่องย่อ</div>
-      <div className="mt-12 bg-[#26292E]  rounded-3xl p-10 px-28 text-xl indent-10 leading-loose">
+      <div className="mt-12 bg-content  rounded-3xl p-10 px-28 text-xl indent-10 leading-loose">
         {movieDetail}
       </div>
       {modal && <ModalImage hidden={true} image={image} movieName={movieName} video={video} setModal={setModal} />}
